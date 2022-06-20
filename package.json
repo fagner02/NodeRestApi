@@ -1,0 +1,18 @@
+{
+  "name": "ta",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.1",
+    "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.16",
+    "serverless-http": "^3.0.1"
+  },
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
+  }
+}
