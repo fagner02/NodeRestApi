@@ -6,7 +6,7 @@ const router = express.Router();
 var k = [];
 
 var options = {
-  origin: "http://127.0.0.1:5500",
+  origin: "*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false,
   optionsSuccessStatus: 204,
