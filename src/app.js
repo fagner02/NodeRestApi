@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   res.send("Hello World!" + res.statusCode);
 });
-router.post("/p", (req, res) => {
+router.get("/p", (req, res) => {
   res.send("post");
 });
 app.use("/.netlify/functions/app", router);
