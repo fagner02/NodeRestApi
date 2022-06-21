@@ -1,0 +1,140 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+}
+
+p {
+  font-size: 1rem;
+}
+
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 0.7rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.back {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin: 0 10px;
+  padding-right: 10px;
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(54, 54, 54);
+  border: 1px solid hsl(0, 0%, 0%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-grow: 0;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+.front {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.button-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+button {
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 12%);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: hsl(0, 0%, 17%);
+  color: white;
+}
+button:active {
+  background-color: hsl(0, 0%, 25%);
+  color: white;
+}
+
+.middle-box {
+  display: grid;
+  grid-template: 1fr 1fr;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.back::-webkit-scrollbar {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.back::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: hsl(240, 3%, 15%);
+}
+.card-box {
+  display: flex;
+}
+.card {
+  color: white;
+  flex-grow: 0;
+  border-radius: 5px;
+  background-color: rgb(34, 34, 34);
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 20px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  overflow-x: hidden;
+  resize: none;
+  font-size: 1rem;
+  border: 1px solid hsl(0, 0%, 12%);
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.title {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  font-size: 1rem;
+  padding: 5px;
+  appearance: none;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 12%);
+  border-radius: 5px;
+  z-index: 6;
+  margin-bottom: 5px;
+}
